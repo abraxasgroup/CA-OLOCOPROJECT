@@ -211,7 +211,7 @@
               </div>
               <div>
                 <label>WhatsApp</label>
-                <input name="whatsapp" required inputmode="tel" placeholder="+54 9 ...">
+                <input name="whatsapp" required inputmode="tel" placeholder="+54 93417400299">
               </div>
             </div>
 
