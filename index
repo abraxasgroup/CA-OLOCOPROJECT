@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>El Caño Loco – Caños recuperados Oil & Gas | Envíos a todo el país</title>
+  <meta name="description" content="Caños recuperados de la industria Oil & Gas en Argentina: petroleros, tubing y accesorios. Stock real, entregas a todo el país y pago al recibir. Cotizá por WhatsApp.">
+  <link rel="canonical" href="https://www.elcanoloco.com.ar/">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="El Caño Loco – Caños recuperados Oil & Gas">
+  <meta property="og:description" content="Stock real. Envíos a todo el país. Cotizá por WhatsApp.">
+  <meta property="og:image" content="assets/og-cover.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Preconnects -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Tip: si luego querés usar una tipografía, la agregamos. De momento usamos fuentes del sistema para performance. -->
+
+  <style>
+    :root{
+      --brand:#FFC400; /* amarillo */
+      --brand-800:#DAA400;
+      --bg:#0d0d0f;   /* negro profundo */
+      --ink:#ffffff;
+      --muted:#b6b6b6;
+      --card:#141418;
+      --ok:#18a957;
+      --error:#ff5151;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:14px;
+      --max:1140px;
+    }
+    /* Reset simple y mobile-first */
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+    img{max-width:100%;height:auto;display:block}
+    a{color:var(--brand);text-decoration:none}
+    .container{width:100%;max-width:var(--max);margin:auto;padding:0 16px}
+    .btn{display:inline-flex;align-items:center;gap:.6rem;border:0;border-radius:999px;padding:.9rem 1.2rem;background:var(--brand);color:#111;font-weight:800;box-shadow:var(--shadow);transition:transform .08s ease}
+    .btn:hover{transform:translateY(-1px)}
+    .btn.outline{background:transparent;color:var(--brand);border:2px solid var(--brand)}
+    .tag{display:inline-block;background:#1d1d22;border:1px solid #26262e;color:#d9d9d9;border-radius:999px;padding:.35rem .7rem;font-size:.9rem}
+    header{position:sticky;top:0;z-index:50;background:linear-gradient(180deg,#0d0d0fd9,#0d0d0f00)}
+    nav{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:10px 0}
+    nav .brand{display:flex;align-items:center;gap:10px}
+    nav .brand img{width:46px;height:46px}
+    nav a.link{color:#e6e6e6;opacity:.86}
+    nav .cta{display:none}
+    @media(min-width:960px){ nav .cta{display:flex;gap:10px} }
+
+    .hero{
+      background:
+        radial-gradient(1200px 300px at 50% -120px, rgba(255,196,0,.16), transparent 60%),
+        repeating-linear-gradient(120deg, #111 0, #111 12px, #0f0f12 12px, #0f0f12 24px);
+      padding:70px 0 28px;
+      border-bottom:1px solid #1c1c22;
+    }
+    .hero h1{font-size:clamp(2rem,7vw,3rem);line-height:1.15;margin:.4rem 0}
+    .hero p{color:#d9d9d9;max-width:680px;margin:0 0 1rem}
+    .hero .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .grid{display:grid;gap:18px}
+    @media(min-width:900px){ .grid.cols-3{grid-template-columns:repeat(3,1fr)} }
+    .card{background:var(--card);border:1px solid #1f1f26;border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+    .card h3{margin:.2rem 0 .3rem}
+    .badge{background:var(--brand);color:#111;font-weight:800;border-radius:6px;padding:.25rem .5rem}
+    .section{padding:36px 0}
+    .section h2{font-size:clamp(1.4rem,4vw,2rem);margin:0 0 .6rem}
+    .muted{color:var(--muted)}
+    .products .product{display:flex;flex-direction:column;gap:10px}
+    .products .thumb{aspect-ratio:16/10;border-radius:12px;overflow:hidden;border:1px solid #262630;background:#101015}
+    .list{display:grid;gap:10px}
+    .list li{display:flex;justify-content:space-between;padding:.55rem .8rem;background:#15151b;border:1px solid #242430;border-radius:10px}
+    .kpi{display:flex;gap:12px;align-items:center}
+    .kpi .value{font-weight:900;font-size:1.3rem}
+    .testi{display:grid;gap:14px}
+    @media(min-width:900px){ .testi{grid-template-columns:repeat(3,1fr)} }
+    .testi .item{background:#141419;border:1px solid #222230;border-radius:14px;padding:16px}
+    .floating-wa{
+      position:fixed;right:16px;bottom:16px;z-index:60;
+      background:#25D366;color:#111;border-radius:999px;padding:.85rem 1rem;font-weight:800;box-shadow:var(--shadow)
+    }
+    form{display:grid;gap:12px}
+    input,select,textarea{
+      width:100%;padding:.85rem .9rem;border-radius:10px;border:1px solid #2a2a32;background:#121218;color:#fff
+    }
+    label{font-size:.9rem;color:#cfcfcf}
+    .row{display:grid;gap:10px}
+    @media(min-width:720px){ .row.two{grid-template-columns:1fr 1fr} .row.three{grid-template-columns:1fr 1fr 1fr} }
+    .pill{display:inline-flex;align-items:center;gap:6px;background:#181820;border:1px solid #30303a;border-radius:999px;padding:.4rem .7rem;cursor:pointer}
+    .pill input{accent-color:var(--brand)}
+    footer{border-top:1px solid #1c1c22;padding:32px 0;color:#c9c9c9}
+    small, .small{font-size:.86rem}
+    .price{font-weight:900}
+    .notice{background:#111114;border:1px dashed #30303a;border-radius:12px;padding:.8rem}
+  </style>
+</head>
+<body>
+  <!-- BOTÓN flotante WhatsApp -->
+  <a class="floating-wa" id="wa-float" href="#" aria-label="Escribir por WhatsApp">WhatsApp</a>
+
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">
+          <img src="assets/logo-yellow.png" alt="El Caño Loco logo">
+          <a class="link" href="#productos">Productos</a>
+          <a class="link" href="#cotizador">Cotizador</a>
+          <a class="link" href="#testimonios">Testimonios</a>
+          <a class="link" href="#contacto">Contacto</a>
+        </div>
+        <div class="cta">
+          <a class="btn outline" href="#cotizador">Cotizar ahora</a>
+          <a class="btn" id="wa-top" href="#">WhatsApp</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <span class="tag">Envíos a todo el país</span>
+        <h1>Caños recuperados <span style="color:var(--brand)">Oil &amp; Gas</span></h1>
+        <p>Stock real de caños petroleros, tubing y especiales. <strong>Primero te llega el producto y después nos pagás*</strong>. Asesoría experta y entregas rápidas.</p>
+        <div class="actions">
+          <a class="btn" href="#cotizador">Cotizar por WhatsApp</a>
+          <a class="btn outline" href="#productos">Ver stock</a>
+        </div>
+        <p class="muted small" style="margin-top:.8rem">*Modalidad disponible según zona y tipo de pedido.</p>
+        <div class="grid" style="margin-top:18px;gap:12px">
+          <div class="kpi"><span class="badge">+14</span> <span>diámetros en petroleros</span></div>
+          <div class="kpi"><span class="badge">48h</span> <span>despachos promedio</span></div>
+          <div class="kpi"><span class="badge">100%</span> <span>orientado a mobile</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section id="productos" class="section products">
+      <div class="container">
+        <h2>Nuestros productos</h2>
+        <p class="muted">Todos los caños son recuperados, inspeccionados y listos para su nuevo uso.</p>
+
+        <div class="grid cols-3" style="margin-top:14px">
+          <!-- Petroleros -->
+          <article class="card product">
+            <div class="thumb">
+              <img loading="lazy" src="assets/petroleros.jpg" alt="Stock de caños petroleros apilados">
+            </div>
+            <h3>Caños petroleros</h3>
+            <p class="muted small">Diámetros disponibles: 4”, 5”, 6”, 7”, 8”, 10”, 12”, 14”, 16”, 18”, 20”, 24”, 30”.</p>
+            <ul class="list small" aria-label="Opciones frecuentes">
+              <li><span>Largos típicos</span><span>6–12 m</span></li>
+              <li><span>Estados</span><span>Recuperado / Reacond.</span></li>
+              <li><span>Usos</span><span>Obras, riego, pilotes, corrales</span></li>
+            </ul>
+            <a class="btn" href="#cotizador" data-prefill="petrolero">Cotizar</a>
+          </article>
+
+          <!-- Tubing -->
+          <article class="card product">
+            <div class="thumb">
+              <img loading="lazy" src="assets/tubing.jpg" alt="Caños tubing usados">
+            </div>
+            <h3>Caños tubing</h3>
+            <p class="muted small">2” 3/8, 2” 7/8, 3” 1/2.</p>
+            <ul class="list small">
+              <li><span>Roscado</span><span>EUE / NUE</span></li>
+              <li><span>Largos típicos</span><span>9–10 m</span></li>
+              <li><span>Usos</span><span>Estructuras, cercos, bebederos</span></li>
+            </ul>
+            <a class="btn" href="#cotizador" data-prefill="tubing">Cotizar</a>
+          </article>
+
+          <!-- Accesorios/Especiales -->
+          <article class="card product">
+            <div class="thumb">
+              <img loading="lazy" src="assets/accesorios.jpg" alt="Accesorios y especiales">
+            </div>
+            <h3>Accesorios y especiales</h3>
+            <p class="muted small">Chapas, medias cañas, tramos especiales, bridas y más (según disponibilidad).</p>
+            <div><span class="tag">Consulta stock</span></div>
+            <a class="btn" href="#cotizador" data-prefill="accesorios">Pedir ahora</a>
+          </article>
+        </div>
+
+        <div class="notice small" style="margin-top:14px">
+          <strong>¿Estás fuera de tu provincia?</strong> Hacemos envíos a cada rincón del país.
+        </div>
+      </div>
+    </section>
+
+    <!-- COTIZADOR -->
+    <section id="cotizador" class="section">
+      <div class="container">
+        <h2>Pedí tu cotización</h2>
+        <p class="muted">Completá el formulario: te armamos el pedido y lo enviamos por WhatsApp o email.</p>
+
+        <div class="card">
+          <form id="quoteForm" novalidate>
+            <div class="row two">
+              <div>
+                <label>Nombre y apellido</label>
+                <input name="nombre" required placeholder="Tu nombre">
+              </div>
+              <div>
+                <label>WhatsApp</label>
+                <input name="whatsapp" required inputmode="tel" placeholder="+54 9 ...">
+              </div>
+            </div>
+
+            <div class="row two">
+              <div>
+                <label>Provincia</label>
+                <select name="provincia" required>
+                  <option value="" disabled selected>Elegí tu provincia</option>
+                  <option>Buenos Aires</option><option>CABA</option><option>Córdoba</option>
+                  <option>Santa Fe</option><option>Mendoza</option><option>Neuquén</option>
+                  <option>Río Negro</option><option>Chubut</option><option>Salta</option>
+                  <option>Tucumán</option><option>San Juan</option><option>Santa Cruz</option>
+                  <option>La Pampa</option><option>Entre Ríos</option><option>Corrientes</option>
+                  <option>Misiones</option><option>Chaco</option><option>Formosa</option>
+                  <option>Catamarca</option><option>La Rioja</option><option>Santiago del Estero</option>
+                  <option>San Luis</option><option>Jujuy</option><option>Tierra del Fuego</option>
+                </select>
+              </div>
+              <div>
+                <label>Tipo de caño</label>
+                <select name="tipo" id="tipo">
+                  <option value="petrolero">Petrolero</option>
+                  <option value="tubing">Tubing</option>
+                  <option value="especial">Especial / Accesorios</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row three" id="diametros">
+              <!-- Se llenará por JS según el tipo -->
+            </div>
+
+            <div class="row three">
+              <div>
+                <label>Largo (m)</label>
+                <input name="largo" type="number" step="0.01" min="1" value="6" required>
+              </div>
+              <div>
+                <label>Cantidad de caños</label>
+                <input name="cantidad" type="number" min="1" value="10" required>
+              </div>
+              <div>
+                <label>¿Requiere envío?</label>
+                <select name="envio">
+                  <option>Si</option><option>No</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label>Uso previsto (opcional)</label>
+              <input name="uso" placeholder="Riego, corrales, pilotes, estructura…">
+            </div>
+
+            <div class="row two">
+              <div class="notice">
+                <div><strong>Estimación orientativa:</strong> <span id="total" class="price">$0</span></div>
+                <div class="small muted">Los precios se confirman por WhatsApp según stock y zona.</div>
+              </div>
+              <div class="row two">
+                <button class="btn" type="button" id="btn-whatsapp">Enviar por WhatsApp</button>
+                <button class="btn outline" type="submit">Enviar por Email</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section id="testimonios" class="section">
+      <div class="container">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="testi" style="margin-top:12px">
+          <div class="item">
+            <p>“¡Impecable! Nos resolvieron el riego en tiempo récord. Llegó todo parejo y como lo pedimos.”</p>
+            <p class="muted small">— Establecimiento Don Juan, Córdoba</p>
+          </div>
+          <div class="item">
+            <p>“Buena calidad y precio. Coordinamos por WhatsApp y a los dos días ya estábamos descargando.”</p>
+            <p class="muted small">— Constructora Norte, Salta</p>
+          </div>
+          <div class="item">
+            <p>“Nos hicieron el cañito: teníamos una medida rara y la consiguieron.”</p>
+            <p class="muted small">— Agro La Esperanza, Santa Fe</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section">
+      <div class="container">
+        <h2>Contacto</h2>
+        <div class="grid" style="gap:18px">
+          <div class="card">
+            <h3>Escribinos</h3>
+            <form id="contactForm" novalidate>
+              <div class="row two">
+                <div>
+                  <label>Nombre</label>
+                  <input name="nombre" required>
+                </div>
+                <div>
+                  <label>Email</label>
+                  <input name="email" type="email" required>
+                </div>
+              </div>
+              <div>
+                <label>Mensaje</label>
+                <textarea name="mensaje" rows="4" required placeholder="Contanos qué necesitás"></textarea>
+              </div>
+              <button class="btn" type="submit">Enviar mensaje</button>
+              <p class="small muted">También podés escribirnos directo al WhatsApp.</p>
+            </form>
+          </div>
+
+          <div class="card">
+            <h3>Datos</h3>
+            <p><strong>El Caño Loco</strong><br>ARG</p>
+            <p>WhatsApp: <a href="#" id="wa-inline">+54 9 11 0000-0000</a><br>Email: <a href="mailto:ventas@elcanoloco.com.ar">ventas@elcanoloco.com.ar</a></p>
+            <p class="muted small">Horarios: Lun a Vie 8–18 hs</p>
+            <img loading="lazy" src="assets/mapa-envios.jpg" alt="Mapa de envíos a todo el país" style="border-radius:12px;border:1px solid #262630">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container small">
+      <div>© <span id="y"></span> El Caño Loco · Todos los derechos reservados</div>
+      <div class="muted">Ningún proyecto es demasiado loco — <em>Siempre le encontramos el caño a todos.</em></div>
+    </div>
+  </footer>
+
+  <!-- JSON-LD SEO -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"El Caño Loco",
+    "url":"https://www.elcanoloco.com.ar/",
+    "logo":"https://www.elcanoloco.com.ar/assets/logo-yellow.png",
+    "sameAs": [],
+    "areaServed":"AR",
+    "contactPoint":{
+      "@type":"ContactPoint",
+      "contactType":"customer support",
+      "telephone":"+54-9-11-0000-0000",
+      "availableLanguage":"es"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"¿Hacen envíos a todo el país?","acceptedAnswer":{"@type":"Answer","text":"Sí, coordinamos fletes a todas las provincias y también podés retirar."}},
+      {"@type":"Question","name":"¿Venden por mayor y menor?","acceptedAnswer":{"@type":"Answer","text":"Sí. Cotizamos desde pequeños proyectos hasta obras grandes."}},
+      {"@type":"Question","name":"¿Los caños están listos para usar?","acceptedAnswer":{"@type":"Answer","text":"Son recuperados e inspeccionados. Dependiendo del uso, se recomiendan ajustes o limpieza."}}
+    ]
+  }
+  </script>
+
+  <script>
+    // ======= CONFIGURACIÓN QUE DEBES EDITAR =======
+    const WHATSAPP_NUM = "5491100000000"; // <- tu número sin + ni espacios
+    const EMAIL_ENDPOINT = "https://formspree.io/f/xxxxxxxx"; 
+    // (temporal: podés usar formspree o tu endpoint propio)
+
+    // Precios orientativos x metro (EDITAR según tu lista)
+    const PRECIOS = {
+      petrolero: { "4": 7800, "5": 9800, "6": 12000, "7": 15000, "8": 17500, "10": 24000, "12": 29500, "14": 36000, "16": 43000, "18": 52000, "20": 61000, "24": 79000, "30": 115000 },
+      tubing:   { "2 3/8": 6800, "2 7/8": 8200, "3 1/2": 9900 },
+      especial: { "A convenir": 0 }
+    };
+    // ==============================================
+
+    const yearEl = document.getElementById('y'); yearEl.textContent = new Date().getFullYear();
+
+    // Botones WhatsApp (top, inline, float)
+    const waLinks = [document.getElementById('wa-top'), document.getElementById('wa-inline'), document.getElementById('wa-float')];
+    waLinks.forEach(el=>{
+      if(!el) return;
+      el.href = `https://wa.me/${WHATSAPP_NUM}?text=${encodeURIComponent("Hola, quiero info de El Caño Loco.")}`;
+      el.target = "_blank"; el.rel="noopener";
+    });
+
+    // Prefill de producto al clic en "Cotizar"
+    document.querySelectorAll('a[data-prefill]').forEach(a=>{
+      a.addEventListener('click', ()=>{
+        document.getElementById('tipo').value = a.dataset.prefill;
+        buildDiametros();
+        document.getElementById('cotizador').scrollIntoView({behavior:'smooth'});
+      });
+    });
+
+    // Construye los diámetros dinámicos
+    const diametrosWrap = document.getElementById('diametros');
+    const tipoSel = document.getElementById('tipo');
+    function buildDiametros(){
+      const t = tipoSel.value;
+      diametrosWrap.innerHTML = "";
+      Object.keys(PRECIOS[t]).forEach((d,i)=>{
+        const id = "d-"+i;
+        const div = document.createElement('div');
+        div.innerHTML = `
+          <label class="pill"><input type="radio" name="diametro" ${i===0?"checked":""} value="${d}"> ${d}"</label>
+        `;
+        diametrosWrap.appendChild(div);
+      });
+      updateTotal();
+    }
+    tipoSel.addEventListener('change', buildDiametros);
+    buildDiametros();
+
+    // Estimación
+    const form = document.getElementById('quoteForm');
+    form.addEventListener('input', updateTotal);
+    function getFormData(f){
+      const data = Object.fromEntries(new FormData(f));
+      if(!data.diametro) data.diametro = Object.keys(PRECIOS[data.tipo])[0];
+      return data;
+    }
+    function updateTotal(){
+      const d = getFormData(form);
+      const precioMetro = PRECIOS[d.tipo][d.diametro] || 0;
+      const metros = parseFloat(d.largo||0) * parseInt(d.cantidad||0);
+      const subtotal = Math.max(0, precioMetro * metros);
+      document.getElementById('total').textContent = subtotal ? `$ ${subtotal.toLocaleString('es-AR')}` : "$0";
+    }
+
+    // Enviar por WhatsApp
+    document.getElementById('btn-whatsapp').addEventListener('click', ()=>{
+      if(!form.checkValidity()){ form.reportValidity(); return; }
+      const d = getFormData(form);
+      const texto = `Hola El Caño Loco, quiero cotizar:
+- Tipo: ${d.tipo}
+- Diámetro: ${d.diametro}"
+- Largo: ${d.largo} m
+- Cantidad: ${d.cantidad}
+- Envío: ${d.envio}
+- Uso: ${d.uso||"-"}
+- Provincia: ${d.provincia}
+Datos: ${d.nombre} / ${d.whatsapp}
+Estimación orientativa vista en la web: ${document.getElementById('total').textContent}`;
+      const url = `https://wa.me/${WHATSAPP_NUM}?text=${encodeURIComponent(texto)}`;
+      window.open(url,'_blank','noopener');
+    });
+
+    // Enviar por Email (Formspree / backend propio)
+    form.addEventListener('submit', async (e)=>{
+      e.preventDefault();
+      if(!form.checkValidity()){ form.reportValidity(); return; }
+      const d = getFormData(form);
+      const payload = {
+        nombre:d.nombre, whatsapp:d.whatsapp, provincia:d.provincia, tipo:d.tipo, diametro:d.diametro,
+        largo:d.largo, cantidad:d.cantidad, envio:d.envio, uso:d.uso||"", total:document.getElementById('total').textContent
+      };
+      try{
+        const res = await fetch(EMAIL_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+        alert(res.ok ? "¡Gracias! Te escribimos a la brevedad." : "Hubo un problema. Probá por WhatsApp.");
+      }catch(err){ alert("No se pudo enviar. Probá por WhatsApp."); }
+    });
+
+    // Formulario de contacto simple (mismo endpoint)
+    document.getElementById('contactForm').addEventListener('submit', async (e)=>{
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(e.target));
+      try{
+        const res = await fetch(EMAIL_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({form:"contacto",...data})});
+        alert(res.ok ? "Mensaje enviado. ¡Gracias!" : "No se pudo enviar. Escribinos por WhatsApp.");
+      }catch{ alert("No se pudo enviar. Escribinos por WhatsApp."); }
+    });
+  </script>
+
+  <!-- Google Analytics (opcional, reemplazar ID) 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)}
+    gtag('js', new Date()); gtag('config','G-XXXXXXX');
+  </script>
+  -->
+</body>
+</html>
